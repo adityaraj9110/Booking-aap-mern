@@ -7,6 +7,7 @@ import hotelsRoute from './routes/hotels.js'
 import cookieParser from "cookie-parser"
 import roomsRoute from './routes/rooms.js'
 import usersRoute from './routes/users.js'
+import path from "path"
 
 
 
@@ -72,7 +73,7 @@ if ( process.env.NODE_ENV == "production"){
 
     app.use(express.static("client/build"));
 
-    const path = require("path");
+    // const path = require("path");
 
     app.get("*", (req, res) => {
 
