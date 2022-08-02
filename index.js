@@ -14,7 +14,7 @@ import path from "path"
 const app = express()
 
 
-const PORT=process.env.PORT || 8800
+// const PORT=process.env.PORT || 8800
 const DB_URL=process.env.DB_URL
 
 
@@ -85,7 +85,7 @@ if ( process.env.NODE_ENV == "production"){
 }
 
 // Listening app
-app.listen(PORT,()=>{
+app.listen(process.env.PORT,()=>{
     dbConnect();
     console.log(`server listening at http://localhost:${PORT}` )
 })
