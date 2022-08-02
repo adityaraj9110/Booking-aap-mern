@@ -87,5 +87,5 @@ if ( process.env.NODE_ENV == "production"){
 // Listening app
 app.listen(process.env.PORT,()=>{
     dbConnect();
-    console.log(`server listening at http://localhost:${PORT}` )
+    console.log(`server listening at http://localhost:${process.env.PORT}` )
 })
