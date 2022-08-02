@@ -60,7 +60,7 @@ const Header = (props) => {
 
   }
   const handleLogout =async ()=>{
-    await axios.get("/auth/logout")
+    await axios.get("https://travel-made-easy.herokuapp.com/auth/logout")
     localStorage.removeItem("User")
     navigate("/login")
   }

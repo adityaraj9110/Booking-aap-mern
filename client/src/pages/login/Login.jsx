@@ -27,7 +27,7 @@ const Login = () => {
     dispatch({ type: "LOGIN_START" });
     // dispatch(authAction.loginStart())
     try {
-      const res = await axios.post("/auth/login", credentials);
+      const res = await axios.post("https://travel-made-easy.herokuapp.com/auth/login", credentials);
       const user=res.data.details
       
       if(user){

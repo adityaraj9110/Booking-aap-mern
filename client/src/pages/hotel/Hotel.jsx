@@ -23,7 +23,7 @@ const Hotel = () => {
   const navigate=useNavigate()
   // console.log(itemId.id);
 
-  const {data,loading,error}=useFetch(`/hotels/find/${itemId.id}`)
+  const {data,loading,error}=useFetch(`hotels/find/${itemId.id}`)
   console.log(data)
   const { dates, options } = useContext(SearchContext);
   console.log(dates)

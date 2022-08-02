@@ -1,7 +1,7 @@
 import useFetch from "../hookes/useFetch"
 import "./featured.css"
 const Featured = () => {
-  const {data,loading,error} =useFetch("/hotels/countByCity/?cities=patna,Chandigarh,mohali,telangana")
+  const {data,loading,error} =useFetch("hotels/countByCity/?cities=patna,Chandigarh,mohali,telangana")
   
   return (
     <div className="featured">
